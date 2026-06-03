@@ -25,7 +25,7 @@ try:
     with tab1:
         st.header("1. 장학금 사각지대와 생활비 대출의 상관관계")
         # 데이터가 잘 들어왔는지 확인하기 위해 상단 5줄 출력
-        st.dataframe(df1.head()) 
+        st.dataframe(df1) 
         
         fig1 = px.scatter(df1, 
                          x="교외장학금 국가", 
