@@ -30,7 +30,7 @@ try:
         fig1 = px.scatter(df1, 
                          x="교외장학금 국가", 
                          y="총_생활비대출_금액",
-                         hover_name="대학명",
+                         hover_name="학교명",
                          title="국가장학금 수혜액 vs 생활비 대출 규모")
         st.plotly_chart(fig1, use_container_width=True)
 
