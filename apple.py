@@ -28,7 +28,7 @@ try:
         st.dataframe(df1.head()) 
         
         fig1 = px.scatter(df1, 
-                         x="교외장학금 국가 (원)", 
+                         x="교외장학금 국가", 
                          y="총_생활비대출_금액",
                          hover_name="대학명",
                          title="국가장학금 수혜액 vs 생활비 대출 규모")
