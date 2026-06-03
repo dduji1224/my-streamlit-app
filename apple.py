@@ -36,7 +36,7 @@ try:
 
     with tab2:
         st.header("2. 국공립 vs 사립대 등록금 및 대출 격차")
-        st.dataframe(df2.head())
+        st.dataframe(df2)
         
         avg_data = df2.groupby("설립별")[["평균등록금(원)", "총_대출_금액"]].mean().reset_index()
         fig2 = px.bar(avg_data, x="설립별", y="평균등록금(원)", title="평균 등록금 비교")
